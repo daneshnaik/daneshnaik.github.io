@@ -2568,7 +2568,7 @@ $('#cv').addEventListener('click',()=>{const bin=atob(PDF),u=new Uint8Array(bin.
 $$('.gh').forEach(b=>b.addEventListener('click',()=>setTimeout(()=>window.open('https://github.com/daneshnaik','_blank','noopener'),500)));
 /* contact: progress, then open mail app */
 /* contact: needs WEB3FORMS key to deliver straight to your inbox; without it, falls back to the visitor's mail app */
-const WEB3_KEY="";
+const WEB3_KEY="91d0c38c-3777-4d95-a623-c18f46f73d47";
 $('#send').addEventListener('click',()=>{const n=$('#fn').value.trim(),m=$('#fm').value.trim(),em=$('#fe').value.trim();if(!m){toast('Write a message first!');return}
 const mail=()=>{toast('Opening your mail app...');location.href='mailto:daneshnaik4@gmail.com?subject='+encodeURIComponent('Hi Danesh, message from your portfolio')+'&body='+encodeURIComponent(m+'\n\n'+(n||'')+(em?'\n'+em:''))};
 const pg=$('#pg');pg.reset();let p=0,res=null;
